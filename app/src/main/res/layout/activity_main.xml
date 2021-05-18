@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFB"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="TOTAL COUNTS"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/txcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="x"
+        android:textColor="@android:color/background_dark"
+        android:textSize="100dp"
+        android:layout_marginBottom="200dp"/>
+
+    <LinearLayout
+        android:layout_width="435dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/txb1"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button_minus"
+            android:text="-"
+            android:textSize="45dp"/>
+
+        <Button
+            android:id="@+id/txb2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button_plus"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/txreset"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reset Counter"
+        android:textSize="25dp"/>
+
+</LinearLayout>
